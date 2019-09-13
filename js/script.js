@@ -65,7 +65,7 @@ function showContact(contactId) {
   $("#show-contact").show();
   $(".first-name").html(contact.firstName);
   $(".last-name").html(contact.lastName);
-  $(".phone-number").html(contact.phoneNumber);
+  $(".address").html(contact.phoneNumber);
   var buttons = $("#buttons");
   buttons.empty();
   buttons.append("<button class='deleteButton' id=" + contact.id + ">Delete</button>");
@@ -73,7 +73,12 @@ function showContact(contactId) {
 
 function attachContactListeners() {
   $("ul#contacts").on("click", "li", function() {
-    console.log("The id of this <li> is " + this.id + ".");
+    showContact(this.id);
+  });
+  $("#buttons").on("click", ".deleteButton", function() {
+    addressBook.deleteContact(this.id);
+    $("#show-contact").hide();
+    displayContactDetails(addressBook);
   });
 };
 
@@ -90,7 +95,6 @@ $(document).ready(function() {
     $("input#new-phone-number").val("");
     var newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedPhoneNumber);
     addressBook.addContact(newContact);
-    console.log(addressBook.contacts);
     displayContactDetails(addressBook);
   })
  })

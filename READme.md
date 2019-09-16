@@ -6,7 +6,7 @@
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_Adding more touches including Event Delegation and User Interface._
 
 ## Setup/Installation Requirements
 
@@ -27,6 +27,24 @@ _email.com_
 ## Technologies Used
 
 _{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+
+## Specs
+
+_Spec 1: Displays multiple properties (first name, last name, phone number)._
+  _Input: "jim jim, 506-555-5555"_
+  _Output: jim jim, 506-555-5555_
+
+_Spec 2: The phone number input only accepts numbers._
+  _Input: "rty"_
+  _Output: " "_
+
+_Spec 3: The First and Last name input only accept letters
+  _Input: "4"_
+  _Output: " "_
+
+_Spec 4: Records multiple addresses._
+  _Input: "Jim, Tim, Wim"_
+  _Output: Jim, Tim, Wim_
 
 ### License
 

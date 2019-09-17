@@ -65,7 +65,7 @@ function showContact(contactId) {
   $("#show-contact").show();
   $(".first-name").html(contact.firstName);
   $(".last-name").html(contact.lastName);
-  $(".address").html(contact.phoneNumber);
+  $(".phone-number").html(contact.phoneNumber);
   var buttons = $("#buttons");
   buttons.empty();
   buttons.append("<button class='deleteButton' id=" + contact.id + ">Delete</button>");

@@ -1,6 +1,6 @@
 # _adress2_
 
-#### _{Brief description of application}, 9/13/2019_
+#### _Adding Jquery for functionality and display, 9/13/2019_
 
 #### By _**By Soroush Azizi**_
 
@@ -18,7 +18,7 @@ _Adding more touches including Event Delegation and User Interface._
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_You have to reload the page to do it again._
 
 ## Support and contact details
 
